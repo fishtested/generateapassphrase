@@ -1,4 +1,7 @@
 // Disclosure: I copied the word list from another project I made, and added new words.
+
+let passphrase
+
 document.addEventListener('DOMContentLoaded', () => {
     getPassphrase();
 });
@@ -290,7 +293,7 @@ let word1 = words[Math.floor(Math.random() * words.length)]; // This generates a
 let word2 = words[Math.floor(Math.random() * words.length)];
 let word3 = words[Math.floor(Math.random() * words.length)];
 let word4 = words[Math.floor(Math.random() * words.length)];
-let passphrase = `${word1} ${word2} ${word3} ${word4}`;
+passphrase = `${word1} ${word2} ${word3} ${word4}`;
 document.getElementById('passphrase').innerHTML = passphrase;
 }
 
